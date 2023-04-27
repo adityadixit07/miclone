@@ -1,0 +1,27 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.prenavbar {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    background: #eee;
+}
+.prenavbar div{
+    margin: 0.5vmax  5vmax;
+    padding: 2px;
+}
+.prenavbar >div >a{
+    margin: 7px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.prenavbar >div >a >span{
+    padding: 2px;
+    font-weight: 100;
+}
