@@ -1,22 +1,32 @@
-import React from 'react'
-import '../styles/prenavbar.css'
-
+import React from "react";
+import "../styles/prenavbar.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Prenavbar = () => {
   return (
-    <div className='prenavbar'>
-        <div>
-            <a href="/mi">MI India <span>|</span></a>
-            <a href="/miapp">GET MI store app <span>|</span></a>
-            <a href="/help">Online help <span>|</span></a>
-            <a href="/store">Retail Store <span></span></a>
-        </div>
-        <div>
-            <a href="/signIN">Sign in <span>|</span></a>
-            <a href="/signUp">Sign up<span>|</span></a>
-            <a href="/cart">Cart(0)<span></span></a>
-        </div>
+    <div className="prenavbar">
+      <div>
+        <Link to="/mi">
+          MI India <span>|</span>
+        </Link>
+        <Link to="/miapp">
+          GET MI store app <span>|</span>
+        </Link>
+        <Link to="/help">
+          Online help <span>|</span>
+        </Link>
+        <Link to="/store">
+          Retail Store <span></span>
+        </Link>
+      </div>
+      <div>
+        <Link to="/signIN">Sign in <span>|</span></Link>
+        <Link to="/signUp">Sign up<span>|</span></Link>
+        <Link to="/cart"><AiOutlineShoppingCart /></Link>
+        <Link to="cartitem">Cart(0)</Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Prenavbar
+export default Prenavbar;
