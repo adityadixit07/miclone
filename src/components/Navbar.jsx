@@ -3,6 +3,7 @@ import '../styles/navbar.css';
 // import {logo} from '../data/data.json'
 import { Link } from 'react-router-dom';
 import {AiOutlineSearch} from 'react-icons/ai'
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Navbar = () => {
 
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/prenavbar.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Prenavbar = () => {
   return (
     <div className="prenavbar">
