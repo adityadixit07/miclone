@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/prenavbar.css";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart} from "react-icons/ai";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Prenavbar = () => {
@@ -8,21 +8,20 @@ const Prenavbar = () => {
     <div className="prenavbar">
       <div>
         <Link to="/mi">
-          MI India <span>|</span>
         </Link>
         <Link to="/miapp">
-          GET MI store app <span>|</span>
+          GET MI store app 
         </Link>
         <Link to="/help">
-          Online help <span>|</span>
+          Online help 
         </Link>
         <Link to="/store">
-          Retail Store <span></span>
+          Retail Store
         </Link>
       </div>
-      <div>
-        <Link to="/signIN">Sign in <span>|</span></Link>
-        <Link to="/signUp">Sign up<span>|</span></Link>
+      <div className="rightbox">
+        <Link to="/signIN">Sign in </Link>
+        <Link to="/signUp">Sign up</Link>
         <Link to="/cart"><AiOutlineShoppingCart /></Link>
         <Link to="cartitem">Cart(0)</Link>
       </div>

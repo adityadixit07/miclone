@@ -6,22 +6,85 @@
 }
 
 .prenavbar {
-    display: grid;
-    grid-template-columns: 5fr 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background: #eee;
+    padding: 10px;
 }
-.prenavbar div{
-    margin: 0.5vmax  5vmax;
-    padding: 2px;
+
+.prenavbar div {
+    display: flex;
+    align-items: center;
 }
-.prenavbar >div >a{
+
+.prenavbar>div>a {
     margin: 7px;
     text-align: center;
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-.prenavbar >div >a >span{
-    padding: 2px;
-    font-weight: 100;
+
+.prenavbar>div>a {
+    font-size: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .prenavbar {
+        justify-content: center;
+    }
+
+    .prenavbar div {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .prenavbar {
+        justify-content: center;
+    }
+
+    .prenavbar div {
+        margin: 8px;
+    }
+
+    .prenavbar div a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .prenavbar {
+        justify-content: center;
+    }
+
+    .prenavbar div {
+        margin: 5px;
+    }
+
+    .prenavbar div a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:367px) {
+    .prenavbar div {
+        margin: 3px;
+    }
+    .prenavbar div a{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:300px) {
+    .prenavbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .prenavbar div {
+        margin: 3px;
+    }
+    .prenavbar div a{
+        font-size: 8px;
+    }
 }

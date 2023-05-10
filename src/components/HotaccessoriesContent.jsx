@@ -4,10 +4,10 @@ import '../styles/hotaccessContent.css'
 
 const HotaccessoriesContent = ({ music, musicCover,smartDevice,smartDeviceCover,home,homeCover,lifestyle,lifestyleCover,mobileaccessories,mobileaccessoriesCover }) => {
   return (
-    <div className="hotaccessContent">
-      <div>
+    <div className="HotAccessoriesContent">
+      {/* <div>
         <img src={musicCover || smartDeviceCover || homeCover||lifestyleCover||mobileaccessoriesCover} alt="musicCover" />
-      </div>
+      </div> */}
       <div>
         {/* music */}
         {
@@ -40,7 +40,7 @@ const HotaccessoriesContent = ({ music, musicCover,smartDevice,smartDeviceCover,
           ))
         }
         {/* for browse more section */}
-        {/* <HotItemCard  /> */}
+        <HotItemCard image="https://i01.appmifile.com/webfile/globalimg/in/cms/593181BE-7DB8-15F5-E907-506427B8C9F4.jpg" />
       </div>
     </div>
   );

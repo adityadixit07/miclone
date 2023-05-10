@@ -1,0 +1,10 @@
+.videos{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:650px) {
+    .videos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

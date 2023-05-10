@@ -1,0 +1,41 @@
+.navcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navcard img {
+    width: 25%;
+}
+
+.navcard h3 {
+    font-size: 20px;
+}
+
+@media (max-width:720px) {
+    .navcard h3 {
+        font-size: 13px;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:520) {
+    .navcard h3 {
+        font-size: 12px;
+        margin-right: 3rem;
+    }
+}
+@media (max-width:360px) {
+    .navcard{
+        flex-direction: column;
+    }
+}
+@media (max-width:280px) {
+    .navcard h3 {
+        font-size: 9px;
+    }
+
+    .navcard p {
+        font-size: 9px;
+    }
+}

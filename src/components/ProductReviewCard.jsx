@@ -1,12 +1,12 @@
 import React from 'react'
-
+import '../styles/productReviewCard.css'
 const ProductReviewCard = ({name,image,price,review,index}) => {
   return (
-    <div>
+    <div className='ProductReviewCard'>
         <img src={image} alt={`${index} review`} />
-        <h4>{review}</h4>
-        <p>{name}</p>
-        <span>{price}</span>
+        <h5>{review}</h5>
+        <span>{name}</span>
+        <b>{price}</b>
     </div>
   )
 }

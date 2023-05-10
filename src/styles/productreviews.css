@@ -1,0 +1,19 @@
+.productReviews{
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+}
+/* media query */
+@media (max-width:650px) {
+    .productReviews{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:270px) {
+    .productReviews{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
